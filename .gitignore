@@ -3,3 +3,4 @@ __pycache__/
 __pycache__/*.pyc
 *.png
 uv.lock
+software-testing/integration-test-plan/references/test-environments.private.md

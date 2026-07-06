@@ -1,0 +1,315 @@
+stocks:
+  - symbol: SPACEX
+    market: PRIVATE
+    aliases: [SpaceX, Space Exploration Technologies]
+    keywords: [SpaceX, Starlink, Starship, Elon Musk]
+    preferred_sources:
+      - https://www.spacex.com/updates/
+    tags: [space, aerospace, private-company]
+
+  - symbol: SPY
+    market: NYSEARCA
+    aliases: [SPDR S&P 500 ETF Trust, S&P 500 ETF, Standard and Poor 500 ETF]
+    keywords: [SPY, S&P 500, Standard and Poor 500, SPDR]
+    preferred_sources:
+      - https://www.ssga.com/us/en/intermediary/etfs/funds/spdr-sp-500-etf-trust-spy
+    tags: [etf, index, macro]
+
+  - symbol: GOOGL
+    market: NASDAQ
+    aliases: [Alphabet, Google]
+    keywords: [Google, Alphabet, Gemini, Sundar Pichai]
+    preferred_sources:
+      - https://blog.google/
+      - https://abc.xyz/investor/
+    tags: [ai, cloud, advertising]
+
+  - symbol: NVDA
+    market: NASDAQ
+    aliases: [NVIDIA]
+    keywords: [NVIDIA, Jensen Huang, Blackwell]
+    preferred_sources:
+      - https://nvidianews.nvidia.com/
+    tags: [ai, semiconductors]
+
+  - symbol: MU
+    market: NASDAQ
+    aliases: [Micron, Micron Technology]
+    keywords: [Micron, HBM, memory, DRAM, NAND, Sanjay Mehrotra]
+    preferred_sources:
+      - https://investors.micron.com/news-releases/news-release-details/default.aspx
+    tags: [semiconductors, memory, ai]
+
+  - symbol: TSLA
+    market: NASDAQ
+    aliases: [Tesla]
+    keywords: [Tesla, Elon Musk, Optimus, FSD, Robotaxi]
+    preferred_sources:
+      - https://ir.tesla.com/press-release
+      - https://www.tesla.com/blog
+    tags: [ev, autonomy, ai]
+
+people:
+  - name: Cao Chunhui
+    homepage: https://xargin.com/
+    tags: [go, systems, ai, engineering]
+
+  - name: Dongge IT Note
+    homepage: https://donggeitnote.com/
+    tags: [systems, database, distributed-systems, career]
+
+  - name: ac_oier
+    homepage: https://leetcode.cn/u/ac_oier/
+    tags: [algorithms, leetcode, training]
+
+  - name: Qinghua Wuji
+    homepage: https://jincheng9.github.io/
+    tags: [personal-blog, engineering]
+
+  - name: CatCoding
+    homepage: https://catcoding.me/
+    tags: [programming, writing, open-source, career]
+
+  - name: Coders Cat
+    homepage: https://coderscat.com/
+    tags: [algorithms, systems, programming-basics]
+
+  - name: Yuanpei
+    homepage: https://blog.yuanpei.me/
+    tags: [personal-blog, writing, engineering]
+
+  - name: Yupaits
+    homepage: https://yupaits.com/
+    tags: [learning, blogging, maintenance]
+
+  - name: Indigox
+    homepage: https://www.indigox.me/
+    tags: [personal-blog, engineering]
+
+  - name: Su Jianlin
+    homepage: https://www.kexue.fm/
+    tags: [llm, deep-learning, math, moe]
+
+  - name: Lilian Weng
+    homepage: https://lilianweng.github.io/
+    tags: [agent, llm, reinforcement-learning, alignment]
+
+  - name: Chip Huyen
+    homepage: https://huyenchip.com/blog/
+    tags: [ai-engineering, ml-systems, llm-applications]
+
+  - name: Eugene Yan
+    homepage: https://eugeneyan.com/start-here/
+    tags: [recommendation, search, rag, ml-systems]
+
+  - name: Sebastian Raschka
+    homepage: https://sebastianraschka.com/blog/
+    tags: [machine-learning, pytorch, llm, learning]
+
+  - name: Jay Alammar
+    homepage: https://jalammar.github.io/
+    tags: [transformers, llm, visualization, education]
+
+  - name: Andrej Karpathy
+    homepage: https://karpathy.ai/
+    tags: [deep-learning, llm, research, engineering]
+
+  - name: Simon Willison
+    homepage: https://simonwillison.net/
+    rss_url: https://simonwillison.net/atom/everything/
+    tags: [ai, llm, tooling]
+
+  - name: Will Larson
+    homepage: https://lethain.com/
+    tags: [staff-engineer, engineering-management, org-design, systems]
+
+  - name: Mitchell Hashimoto
+    homepage: https://mitchellh.com/writing
+    tags: [infrastructure, zig, large-projects, engineering]
+
+  - name: Julia Evans
+    homepage: https://jvns.ca/
+    tags: [systems, networking, debugging, writing]
+
+  - name: Dan Luu
+    homepage: https://danluu.com/
+    tags: [computer-systems, performance, hardware, engineering-culture]
+
+  - name: Charity Majors
+    homepage: https://charity.spicytakes.org/
+    tags: [observability, sre, engineering-management, culture]
+
+  - name: Zhang Xinxu
+    homepage: https://www.zhangxinxu.com/
+    tags: [frontend, css, browser, writing]
+
+  - name: Ruan Yifeng
+    homepage: https://www.ruanyifeng.com/blog/
+    tags: [weekly, open-source, industry, learning]
+
+  - name: Paul Graham
+    homepage: https://www.paulgraham.com/articles.html
+    tags: [startup, hacker-culture, writing, thinking]
+
+  - name: Patrick McKenzie
+    homepage: https://www.kalzumeus.com/
+    tags: [software-business, sales, pricing, payments]
+
+  - name: Elad Gil
+    homepage: https://blog.eladgil.com/
+    tags: [startup, fundraising, scaling, ai]
+
+  - name: Sahil Lavingia
+    homepage: https://sahillavingia.com/
+    tags: [indie-hacking, product, lean-team, business]
+
+sites:
+  - name: DeepSeek Official
+    url: https://www.deepseek.com/
+    kind: company-site
+    group: DeepSeek
+    tags: [ai, llm, deepseek, official]
+
+  - name: DeepSeek API Docs
+    url: https://api-docs.deepseek.com/
+    kind: docs
+    group: DeepSeek
+    tags: [ai, llm, deepseek, api, official]
+
+  - name: DeepSeek GitHub
+    url: https://github.com/deepseek-ai
+    kind: github-org
+    group: DeepSeek
+    tags: [ai, llm, deepseek, open-source, official]
+
+  - name: DeepSeek Hugging Face
+    url: https://huggingface.co/deepseek-ai
+    kind: model-hub
+    group: DeepSeek
+    tags: [ai, llm, deepseek, model-hub, official]
+
+  - name: DeepSeek Status
+    url: https://status.deepseek.com/
+    kind: status-page
+    group: DeepSeek
+    tags: [ai, llm, deepseek, status, official]
+
+  - name: SemiAnalysis
+    url: https://www.semianalysis.com/
+    kind: analysis-site
+    group: DeepSeek
+    tags: [ai, llm, deepseek, analysis]
+
+  - name: Nous Research
+    url: https://nousresearch.com/
+    kind: company-site
+    group: Hermes Agent
+    tags: [ai, llm, hermes, nous, official]
+
+  - name: Nous Research GitHub
+    url: https://github.com/NousResearch
+    kind: github-org
+    group: Hermes Agent
+    tags: [ai, llm, hermes, nous, open-source]
+
+  - name: Nous Research Hugging Face
+    url: https://huggingface.co/NousResearch
+    kind: model-hub
+    group: Hermes Agent
+    tags: [ai, llm, hermes, nous, model-hub]
+
+  - name: Nous Research Discord
+    url: https://discord.gg/nousresearch
+    kind: community
+    group: Hermes Agent
+    tags: [ai, llm, hermes, nous, community]
+
+  - name: Nous Research X
+    url: https://x.com/NousResearch
+    kind: social
+    group: Hermes Agent
+    tags: [ai, llm, hermes, nous, social]
+
+  - name: arXiv Hermes Nous Search
+    url: https://arxiv.org/search/?query=Nous+Research+Hermes&searchtype=all
+    kind: literature-search
+    group: Hermes Agent
+    tags: [ai, llm, hermes, nous, research]
+
+  - name: Bojie Li
+    url: https://01.me/
+    kind: personal-blog
+    group: Engineering Blogs
+    tags: [networking, systems, infrastructure, personal-blog]
+
+  - name: Pixdot
+    url: https://www.pixdot.cn/
+    kind: company-site
+    group: Startup and Product
+    tags: [ai, computer-vision, startup]
+
+  - name: Novosns
+    url: https://www.novosns.com/
+    kind: company-site
+    group: Semiconductor
+    tags: [semiconductors, hardware, industry]
+
+  - name: Coolshell
+    url: https://coolshell.cn/
+    kind: personal-blog
+    group: Engineering Blogs
+    tags: [engineering-growth, architecture, culture]
+
+  - name: Lianglianglee
+    url: https://lianglianglee.com/
+    kind: curated-site
+    group: Engineering Blogs
+    tags: [curation, engineering, index]
+
+  - name: Dive into Deep Learning
+    url: https://d2l.ai/
+    kind: open-course
+    group: AI and LLM
+    tags: [deep-learning, education, open-source]
+
+  - name: The Pragmatic Engineer
+    url: https://www.pragmaticengineer.com/
+    kind: newsletter
+    group: Engineering Growth
+    tags: [senior-engineer, engineering-management, industry, career]
+
+  - name: A Smart Bear
+    url: https://longform.asmartbear.com/
+    kind: blog
+    group: Startup and Product
+    tags: [saas, startup, growth, pricing, management]
+
+  - name: Lennys Newsletter
+    url: https://www.lennysnewsletter.com/
+    kind: newsletter
+    group: Startup and Product
+    tags: [product, growth, startup, pm]
+
+  - name: All Things Distributed
+    url: https://www.allthingsdistributed.com/
+    kind: team-blog
+    group: Team Engineering Blogs
+    tags: [distributed-systems, architecture, aws, trends]
+
+  - name: Meituan Tech
+    url: https://tech.meituan.com/
+    kind: team-blog
+    group: Team Engineering Blogs
+    tags: [backend, ai, data, architecture]
+
+  - name: Dewu Tech
+    url: https://tech.dewu.com/
+    kind: team-blog
+    group: Team Engineering Blogs
+    tags: [ecommerce, reliability, golang, ai, engineering-efficiency]
+
+  - name: Grab Engineering
+    url: https://engineering.grab.com/
+    kind: team-blog
+    group: Team Engineering Blogs
+    tags: [platform, local-services, engineering]

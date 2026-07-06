@@ -1,0 +1,5 @@
+version: 1
+display_name: Excalidraw Diagram
+short_description: Choose the right software diagram and generate a strong Excalidraw visual.
+default_prompt: Use $excalidraw-diagram to decide the best diagram for this problem and generate an Excalidraw-ready architecture, flow, ERD, or onboarding visual.
+

@@ -1,0 +1,5 @@
+version: 1
+display_name: Integration Test Result
+short_description: Summarize executed integration tests into reviewable result reports with evidence and gaps.
+default_prompt: Use $integration-test-result to turn these executed test cases, logs, traces, and notes into a review-ready result report with evidence, gaps, and release recommendations.
+

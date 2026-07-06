@@ -1,0 +1,4 @@
+version: 1
+display_name: News Source Digest
+short_description: Gather recent updates from mixed stock, person, and site watchlists and summarize them.
+default_prompt: Use $news-source-digest to read the configured watchlist, fetch recent items from each source, and produce a grouped digest with failures called out explicitly.

@@ -1,6 +1,6 @@
 ---
 name: excalidraw-diagram
-description: Create Excalidraw diagram JSON files that make visual arguments. Use when the user wants to visualize workflows, architectures, concepts, ER diagrams, database schemas, or table relationships.
+description: Use when deciding what software-engineering diagram to draw or when generating an Excalidraw diagram for workflows, architectures, concepts, ERDs, database schemas, sequence flows, deployment views, onboarding diagrams, or incident reviews; also use when the request mentions 该画什么图, 怎么画图, architecture diagram, sequence diagram, ERD, Excalidraw, or software diagram.
 ---
 
 # Excalidraw Diagram Creator
@@ -9,11 +9,53 @@ Generate `.excalidraw` JSON files that **argue visually**, not just display info
 
 **Setup:** If the user asks you to set up this skill (renderer, dependencies, etc.), see `README.md` for instructions.
 
+This skill now covers both:
+
+- choosing the right software-engineering diagram for the audience and problem
+- generating the final Excalidraw diagram with enough structure and detail to teach
+
 ## Customization
 
 **All colors and brand-specific styles live in one file:** `references/color-palette.md`. Read it before generating any diagram and use it as the single source of truth for all color choices — shape fills, strokes, text colors, evidence artifact backgrounds, everything.
 
 To make this skill produce diagrams in your own brand style, edit `color-palette.md`. Everything else in this file is universal design methodology and Excalidraw best practices.
+
+---
+
+## Diagram Selection
+
+Before drawing, decide which diagram best fits the question. Do not default to one visual form for every request.
+
+| Scenario | Primary Diagram | Supporting Diagram |
+|----------|-----------------|--------------------|
+| Requirements clarification or user stories | Use case diagram | Activity diagram |
+| Business process walkthrough | Flowchart or activity diagram | State diagram |
+| API design or service call chain | Sequence diagram | Error-path flow |
+| Data model or schema review | ERD | Class diagram |
+| DDD context mapping | Bounded-context diagram | Sequence diagram |
+| Architecture review | Architecture overview + core sequence | Deployment topology |
+| Incident review | Failure propagation sequence | Recovery flow |
+| Onboarding | System overview | Topology + key request flow |
+| Technical design document | 4+1 views as needed | Focus on 2-3 core diagrams only |
+
+### Audience Rules
+
+- For business or leadership audiences, prefer high-level capability maps and simple flows. Avoid protocol-level detail.
+- For architects, developers, and testers, include technical boundaries, dependencies, failure paths, and evidence artifacts.
+- For onboarding, optimize for orientation first: what the system is, where it runs, and one or two key request paths.
+
+### Tool Rules
+
+- Use Excalidraw for expressive architecture diagrams, concept maps, onboarding visuals, and diagrams that need free-form layout.
+- Use Mermaid or PlantUML when syntax-driven precision matters more than visual composition, especially for sequence, state, or ER diagrams embedded in markdown.
+- If the user explicitly wants Excalidraw, keep the chosen diagram type but render it in Excalidraw instead of switching tools.
+
+### Anti-Patterns
+
+- Do not use one dense technical architecture diagram for every audience.
+- Do not draw only the happy path for sequence or incident diagrams.
+- Do not force all concepts into identical boxes when the structure should carry meaning.
+- Do not generate every possible diagram; choose the fewest views that answer the question well.
 
 ---
 

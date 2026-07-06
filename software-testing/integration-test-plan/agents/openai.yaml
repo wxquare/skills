@@ -1,0 +1,5 @@
+version: 1
+display_name: Integration Test Plan
+short_description: Generate reviewable integration test plans from product, design, and code-change inputs.
+default_prompt: Use $integration-test-plan to turn this PRD, TD, diff, or API change set into a review-ready integration test plan with scope, risks, and case proposals.
+

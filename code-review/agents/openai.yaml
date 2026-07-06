@@ -1,0 +1,4 @@
+version: 1
+display_name: Code Review
+short_description: Review code changes, PRs, and high-risk business logic.
+default_prompt: Use $code-review to review this change and produce prioritized findings.

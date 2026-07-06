@@ -1,0 +1,4 @@
+version: 1
+display_name: Technical Design
+short_description: Write or review technical designs, architecture proposals, and rollout-risk decisions.
+default_prompt: Use $technical-design to write or review this TD or architecture proposal with explicit decisions, scope, rollout, rollback, and risk coverage.
